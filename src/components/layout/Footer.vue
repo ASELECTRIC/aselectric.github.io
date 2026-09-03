@@ -1,12 +1,15 @@
-<script setup></script>
+<script setup>
+function getCurrentYear() {
+  let year = new Date().getFullYear();
+  return year;
+}
+</script>
 <template>
 <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
   <aside>
     <img src="/src/assets/images/logo1.png" alt="Logo" width="100" height="40" class="h-10 w-auto">
     <p>
-      ACME Industries Ltd.
-      <br />
-      Providing reliable tech since 1992
+      Copyright © {{getCurrentYear()}} - All right reserved <br />
     </p>
   </aside>
   <nav>

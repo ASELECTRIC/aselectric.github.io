@@ -3,9 +3,9 @@ import { ref, onMounted, onUnmounted } from 'vue'
 
 // Configuración
 const slides = [
-  { id: 1, src: '/src/assets/images/home/slider/image1.jpg', alt: 'Imagen 1' },
-  { id: 2, src: 'https://daisyui.com', alt: 'Imagen 2' },
-  { id: 3, src: 'https://daisyui.com', alt: 'Imagen 3' }
+  { id: 1, src: '/src/assets/images/home/slider/image1.jpeg', alt: 'Imagen 1' },
+  { id: 2, src: '/src/assets/images/home/slider/image2.jpeg', alt: 'Imagen 2' },
+  { id: 3, src: '/src/assets/images/home/slider/image3.jpeg', alt: 'Imagen 3' }
 ]
 
 const currentSlide = ref(0)
