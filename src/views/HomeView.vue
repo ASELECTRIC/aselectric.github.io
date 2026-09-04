@@ -5,12 +5,14 @@ import Carrousel from '@/components/ui/carrousel/Carrousel.vue';
 const solutionImages = [
   { id: 1, src: '/src/assets/images/home/solutions/solution1.jpeg' },
   { id: 2, src: '/src/assets/images/home/solutions/solution2.jpeg' },
+  { id: 3, src: '/src/assets/images/home/solutions/solution3.jpeg' },
+  { id: 4, src: '/src/assets/images/home/solutions/solution4.jpeg' }
 ];
 
 </script>
 <template>
   <SliderHome />
-  <section class="w-full py-8 container mt-50">
+  <section class="w-full py-8 container mt-30">
     <h1 class="text-5xl text-red-500 text-center font-bold">¿Qué ofrecemos?</h1>
     <br><br>
     <!-- Tarjetas con las palabras claves que definen nuestra empresa -->
