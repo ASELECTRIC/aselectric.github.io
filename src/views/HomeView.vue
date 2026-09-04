@@ -8,7 +8,6 @@ const solutionImages = [
   { id: 3, src: '/src/assets/images/home/solutions/solution3.jpeg' },
   { id: 4, src: '/src/assets/images/home/solutions/solution4.jpeg' }
 ];
-
 </script>
 <template>
   <SliderHome />

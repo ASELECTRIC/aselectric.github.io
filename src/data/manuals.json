@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "title": "Catalogo Progresivo 2024",
+        "description": null,
+        "category": "Catalogos",
+        "download_link": "/src/files/catalogs/CATALOGO PROGRESIVOS AS ELECTRIC 18 SEPTIEMBRE.pdf",
+        "prev_image": "/src/assets/images/manuals/catalogs/catalogo-progresivo-2024.png",
+        "size": "32.44 MG"
+    },
+    {
+        "id": 2,
+        "title": "Catalogo Sistemas Solar 2024",
+        "description": null,
+        "category": "Catalogos",
+        "download_link": "/src/files/catalogs/CATALOGO SISTEMAS SOLAR 28 AGOSTO REVISION FINAL 2.5.3.pdf",
+        "prev_image": "/src/assets/images/manuals/catalogs/catalogo-sistema-solar-2024.png",
+        "size": "47.64 MG"
+    },
+    {
+        "id": 3,
+        "title": "Catalogo Variadores 2024",
+        "description": null,
+        "category": "Catalogos",
+        "download_link": "/src/files/catalogs/CATÁLOGO VARIADORES 2024-5 septiembre.pdf",
+        "prev_image": "/src/assets/images/manuals/catalogs/catalogo-variadores-2024.png",
+        "size": "16.63 MG"
+    },
+    {
+        "id": 4,
+        "title": "Catalogo Bombeo Digital 2024",
+        "description": null,
+        "category": "Catalogos",
+        "download_link": "/src/files/catalogs/CATALOGO BOMBEO DIGITAL IMPRENTA.pdf",
+        "prev_image": "/src/assets/images/manuals/catalogs/catalogo-bombeo-digital-imprenta.png",
+        "size": "16.17 MG"
+    },
+    {
+        "id": 5,
+        "title": "Catalogo Aparamenta Schneider 2024",
+        "description": null,
+        "category": "Catalogos",
+        "download_link": "/src/files/catalogs/CATÁLOGO APARAMENTA SCHNEIDER.pdf",
+        "prev_image": "/src/assets/images/manuals/catalogs/catalogo-aparamenta-schneider-2024.png",
+        "size": "8.51 MB"
+    },
+    {
+        "id": 6,
+        "title": "Manual Instrucciones CD1DG200-300 IMPRENTA",
+        "description": null,
+        "category": "Equipos Digitales",
+        "download_link": "/src/files/equipos_digitales/MANUAL INSTRUCCIONES CD1DG200-300 IMPRENTA.pdf",
+        "prev_image": "/src/assets/images/manuals/equipos_digitales/CD1DG200-300.png",
+        "size": "1.21 MG"
+    },
+    {
+        "id": 7,
+        "title": "Manual Instrucciones CD2DG200-300",
+        "description": null,
+        "category": "Equipos Digitales",
+        "download_link": "/src/files/equipos_digitales/MANUAL INSTRUCCIONES CD2DG200-300.pdf",
+        "prev_image": "/src/assets/images/manuals/equipos_digitales/CD2DG200-300.png",
+        "size": "4.07 MG"
+    },
+    {
+        "id": 8,
+        "title": "Manual SOFT3DN",
+        "description": null,
+        "category": "Equipos Progresivos",
+        "download_link": "/src/files/equipos_progresivos/MANUAL SOFT3DN.pdf",
+        "prev_image": "/src/assets/images/manuals/equipos_progresivos/SOFT3DN.png",
+        "size": "1.19 MG"
+    },
+    {
+        "id": 9,
+        "title": "Aplicacion para Bombeo Solar con PID MS300 V3",
+        "description": null,
+        "category": "Equipos Solares",
+        "download_link": "/src/files/equipos_solares/APLICACIÓN PARA BOMBEO SOLAR CON PID MS300 V3 AS ELECTRIC DELTA.pdf",
+        "prev_image": "/src/assets/images/manuals/equipos_solares/delta-ms300-pv3.png",
+        "size": "2.55 MG"
+    },
+    {
+        "id": 10,
+        "title": "Manual PID multibomba ms 300",
+        "description": null,
+        "category": "Equipos Variadores de Frecuencia",
+        "download_link": "/src/files/variadores_frecuencia/Manual  PID multibomba ms 300 dos bombas.pdf",
+        "prev_image": "/src/assets/images/manuals/variadores_frecuencia/manual-pid-multibomba-ms-300.png",
+        "size": "927.89 KB"
+    },
+    {
+        "id": 11,
+        "title": "Delta-CP2000: Manual de Usuarios",
+        "description": null,
+        "category": "Equipos Variadores de Frecuencia",
+        "download_link": "/src/files/variadores_frecuencia/Delta-CP2000-User-Manual.pdf",
+        "prev_image": "/src/assets/images/manuals/variadores_frecuencia/delta-cp2000.png",
+        "size": "25.77 MG"
+    }
+]

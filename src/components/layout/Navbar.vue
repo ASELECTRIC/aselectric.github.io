@@ -3,9 +3,9 @@
     <div class="navbar bg-base-100 shadow-sm sticky top-0 z-50">
         <!-- Sección del Logo -->
         <div class="flex-1">
-            <a href="#">
+            <router-link to="/">
                 <img src="/src/assets/images/logo1.png" alt="Logo" width="100" height="40">
-            </a>
+            </router-link>
         </div>
         <div class="flex-4"></div>
         <!-- Sección del Menú -->
@@ -20,8 +20,8 @@
                 </button>
                 <ul tabindex="0"
                     class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><a>Inicio</a></li>
-                    <li><a>Tecnología</a></li>
+                    <li><RouterLink to="/">Inicio</RouterLink></li>
+                    <li><RouterLink to="/tecnology">Tecnología</RouterLink></li>
                     <li><a>Catálogos</a></li>
                     <li><a>Información Técnica</a></li>
                     <li><a>Contacto</a></li>
