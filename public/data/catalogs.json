@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "title": "Catalogo Progresivo 2024",
+        "description": null,
+        "download_link": "/public/pdf/catalogs/CATALOGO PROGRESIVOS AS ELECTRIC 18 SEPTIEMBRE.pdf",
+        "front_page": "/src/assets/images/manuals/catalogs/catalogo-progresivo-2024.png",
+        "filename": "CATALOGO PROGRESIVOS AS ELECTRIC 18 SEPTIEMBRE.pdf",
+        "size": "32.44 MG"
+    },
+    {
+        "id": 2,
+        "title": "Catalogo Sistemas Solar 2024",
+        "description": null,
+        "download_link": "/public/pdf/catalogs/CATALOGO SISTEMAS SOLAR 28 AGOSTO REVISION FINAL 2.5.3.pdf",
+        "front_page": "/src/assets/images/manuals/catalogs/catalogo-sistema-solar-2024.png",
+        "filename": "CATALOGO SISTEMAS SOLAR 28 AGOSTO REVISION FINAL 2.5.3.pdf",
+        "size": "47.64 MG"
+    },
+    {
+        "id": 3,
+        "title": "Catalogo Variadores 2024",
+        "description": null,
+        "download_link": "/public/pdf/catalogs/CATÁLOGO VARIADORES 2024-5 septiembre.pdf",
+        "front_page": "/src/assets/images/manuals/catalogs/catalogo-variadores-2024.png",
+        "filename": "CATÁLOGO VARIADORES 2024-5 septiembre.pdf",
+        "size": "16.63 MG"
+    },
+    {
+        "id": 4,
+        "title": "Catalogo Bombeo Digital 2024",
+        "description": null,
+        "download_link": "/public/pdf/catalogs/CATALOGO BOMBEO DIGITAL IMPRENTA.pdf",
+        "front_page": "/src/assets/images/manuals/catalogs/catalogo-bombeo-digital-imprenta.png",
+        "filename": "CATALOGO BOMBEO DIGITAL IMPRENTA.pdf",
+        "size": "16.17 MG"
+    },
+    {
+        "id": 5,
+        "title": "Catalogo Aparamenta Schneider 2024",
+        "description": null,
+        "download_link": "/public/pdf/catalogs/CATÁLOGO APARAMENTA SCHNEIDER.pdf",
+        "front_page": "/src/assets/images/manuals/catalogs/aparamenta-schneider-2024.png",
+        "filename": "CATÁLOGO APARAMENTA SCHNEIDER.pdf",
+        "size": "8.51 MB"
+    }
+]

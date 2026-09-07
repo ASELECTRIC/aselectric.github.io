@@ -22,8 +22,8 @@
                     class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                     <li><RouterLink to="/">Inicio</RouterLink></li>
                     <li><RouterLink to="/tecnology">Tecnología</RouterLink></li>
-                    <li><a>Catálogos</a></li>
-                    <li><a>Información Técnica</a></li>
+                    <li><RouterLink to="/catalogs">Catálogos</RouterLink></li>
+                    <li><RouterLink to="/tech-info">Información Técnica</RouterLink></li>
                     <li><a>Contacto</a></li>
                     <li><a>Ubicación</a></li>
                 </ul>
@@ -31,10 +31,10 @@
 
             <!-- Menú Horizontal para Tablets/Escritorio (Oculto en pantallas pequeñas) -->
             <ul class="menu menu-horizontal px-1 hidden lg:flex">
-                <li><a>Inicio</a></li>
-                <li><a>Tecnología</a></li>
-                <li><a>Catálogos</a></li>
-                <li><a>Información Técnica</a></li>
+                <li><RouterLink to="/">Inicio</RouterLink></li>
+                <li><RouterLink to="/tecnology">Tecnología</RouterLink></li>
+                <li><RouterLink to="/catalogs">Catálogos</RouterLink></li>
+                <li><RouterLink to="/tech-info">Información Técnica</RouterLink></li>
                 <li><a>Contacto</a></li>
                 <li><a>Ubicación</a></li>
             </ul>

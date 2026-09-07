@@ -3,13 +3,13 @@ import { defineProps } from 'vue';
 import DownloadSVG from '@/components/ui/svg/DownloadSVG.vue';
 
 const props = defineProps({
-    manual: {
+    catalog: {
         type: JSON,
         required: true
     }
 });
 
-const manual = props.manual || {};
+const catalog = props.catalog || {};
 
 </script>
 <template>
@@ -19,8 +19,8 @@ const manual = props.manual || {};
         <!-- Contenedor fijo para la portada completa -->
         <figure
             class="w-full aspect-[3/4] bg-base-200/50 p-4 flex items-center justify-center border-b border-base-100 relative group">
-            <a :href="manual.download_link">
-                <img :src="manual.front_page" alt="Front Page Category"
+            <a :href="catalog.download_link">
+                <img :src="catalog.front_page" alt="Front Page Category"
                     class="h-full max-w-full object-contain drop-shadow-md transition-transform duration-300 group-hover:scale-[1.03]" />
             </a>
         </figure>
@@ -29,12 +29,12 @@ const manual = props.manual || {};
         <div class="card-body p-5 flex flex-col justify-between flex-grow">
             <div class="space-y-2">
                 <h2 class="card-title text-base md:text-lg font-bold text-base-content line-clamp-2 leading-tight">
-                    {{ manual.title }}
+                    {{ catalog.title }}
                 </h2>
 
                 <p v-if="catalog.description"
                     class="text-xs md:text-sm text-base-content/70 line-clamp-3 leading-relaxed">
-                    {{ manual.description }}
+                    {{ catalog.description }}
                 </p>
             </div>
 
@@ -43,11 +43,11 @@ const manual = props.manual || {};
 
                 <!-- 1. El Badge queda en el extremo izquierdo -->
                 <div class="badge badge-soft badge-secondary font-medium">
-                    {{ manual.size }}
+                    {{ catalog.size }}
                 </div>
 
                 <!-- 2. El Botón queda en el extremo derecho -->
-                <a type="button" :href="manual.download_link" :download="manual.filename"
+                <a type="button" :href="catalog.download_link" :download="catalog.filename"
                     class="btn btn-primary btn-sm gap-2 shadow-sm transition-transform active:scale-95">
                     <DownloadSVG class="w-4 h-4" />
                     <span class="font-semibold text-xs md:text-sm">Descargar</span>

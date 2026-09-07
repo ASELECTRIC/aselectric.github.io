@@ -58,7 +58,7 @@ onUnmounted(() => {
         <div class="flex transition-transform duration-500 ease-out"
             :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
             <div v-for="slide in slides" :key="slide.id"
-                class="w-full flex-shrink-0 relative aspect-[4/3] sm:aspect-[16/9] bg-zinc-900">
+                class="w-full shrink-0 relative aspect-4/3 sm:aspect-video bg-zinc-900">
                 <img :src="slide.src"
                     class="w-full h-full object-cover" />
 
