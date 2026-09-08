@@ -24,7 +24,7 @@
                     <li><RouterLink to="/tecnology">Tecnología</RouterLink></li>
                     <li><RouterLink to="/catalogs">Catálogos</RouterLink></li>
                     <li><RouterLink to="/tech-info">Información Técnica</RouterLink></li>
-                    <li><a>Contacto</a></li>
+                    <li><RouterLink to="/contact">Contacto</RouterLink></li>
                     <li><a>Ubicación</a></li>
                 </ul>
             </div>
@@ -35,7 +35,7 @@
                 <li><RouterLink to="/tecnology">Tecnología</RouterLink></li>
                 <li><RouterLink to="/catalogs">Catálogos</RouterLink></li>
                 <li><RouterLink to="/tech-info">Información Técnica</RouterLink></li>
-                <li><a>Contacto</a></li>
+                <li><RouterLink to="/contact">Contacto</RouterLink></li>
                 <li><a>Ubicación</a></li>
             </ul>
         </div>

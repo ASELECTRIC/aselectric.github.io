@@ -1,5 +1,9 @@
 const JSON_SRC = '/data/manuals.json'; 
 
+/**
+ * 
+ * Accede al archivo JSON y saca todos los Manuales.
+ */
 async function loadManuals() {
     try {
         let response = await fetch(JSON_SRC);
@@ -12,15 +16,24 @@ async function loadManuals() {
     }
 }
 
+/**
+ * Devuelve todos los manuales
+ * @returns 
+ */
 async function getAllManuals() {
     return await loadManuals();
 }
 
+/**
+ * Devuelve los manuales filtrados. 
+ * @param {String} category 
+ * @param {String} title 
+ */
 async function getFilteredManuals(category, title) {
     let manuals = await loadManuals();
 
     return manuals.filter(item => {
-        
+
         const matchCategory = !category || 
                               category === "Categoría" || 
                               category === "Ninguno" || 
