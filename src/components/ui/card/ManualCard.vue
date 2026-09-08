@@ -25,34 +25,30 @@ const manual = props.manual || {};
             </a>
         </figure>
 
-        <!-- Contenido inferior (Título, descripción y botón) -->
         <div class="card-body p-5 flex flex-col justify-between flex-grow">
             <div class="space-y-2">
                 <h2 class="card-title text-base md:text-lg font-bold text-base-content line-clamp-2 leading-tight">
                     {{ manual.title }}
                 </h2>
-
-                <p v-if="catalog.description"
+                
+                <p v-if="manual.description"
                     class="text-xs md:text-sm text-base-content/70 line-clamp-3 leading-relaxed">
                     {{ manual.description }}
                 </p>
+                <div class="badge badge-soft badge-accent">{{manual.category}}</div>
             </div>
 
-            <!-- Sección del botón empujada siempre al final -->
             <div class="card-actions flex justify-between items-center w-full mt-5 pt-3 border-t border-base-200/60">
 
-                <!-- 1. El Badge queda en el extremo izquierdo -->
                 <div class="badge badge-soft badge-secondary font-medium">
                     {{ manual.size }}
                 </div>
 
-                <!-- 2. El Botón queda en el extremo derecho -->
                 <a type="button" :href="manual.download_link" :download="manual.filename"
                     class="btn btn-primary btn-sm gap-2 shadow-sm transition-transform active:scale-95">
                     <DownloadSVG class="w-4 h-4" />
                     <span class="font-semibold text-xs md:text-sm">Descargar</span>
                 </a>
-
             </div>
         </div>
     </div>

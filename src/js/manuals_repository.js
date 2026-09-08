@@ -1,4 +1,4 @@
-const JSON_SRC = '/public/data/manuals.json'; 
+const JSON_SRC = '/data/manuals.json'; 
 
 async function loadManuals() {
     try {
@@ -8,7 +8,6 @@ async function loadManuals() {
         console.log(manuals);
         return manuals;
     } catch (error) {
-        console.error('Error loading manuals:', error);
         return []
     }
 }
@@ -17,14 +16,25 @@ async function getAllManuals() {
     return await loadManuals();
 }
 
-async function getManualsByCategory(category) {
+async function getFilteredManuals(category, title) {
     let manuals = await loadManuals();
-    let filteredManuals = manuals.filter(item => item.category === category);
-    console.log(filteredManuals);
-    return filteredManuals;
+
+    return manuals.filter(item => {
+        
+        const matchCategory = !category || 
+                              category === "Categoría" || 
+                              category === "Ninguno" || 
+                              item.category === category;
+                              
+        const searchText = title ? title.trim().toLowerCase() : '';
+        const matchText = !searchText || 
+            (item.title && item.title.toLowerCase().includes(searchText));
+        
+        return matchCategory && matchText;
+    });
 }
 
 export {
     getAllManuals,
-    getManualsByCategory
+    getFilteredManuals
 }
