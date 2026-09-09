@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted, computed, watch } from 'vue';
 import ManualCard from '@/components/ui/card/ManualCard.vue';
-import { getAllManuals, getFilteredManuals } from '@/js/manuals_repository';
+import { getAllManuals, getFilteredManuals } from '@/js/repository/manuals_repository';
 import SearchSVG from '@/components/ui/svg/SearchSVG.vue';
 
 const manuals = ref([]);

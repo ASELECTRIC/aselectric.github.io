@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import CatalogCard from '@/components/ui/card/CatalogCard.vue';
-import { getAllCatalogs } from '@/js/catalogs_repository';
+import { getAllCatalogs } from '@/js/repository/catalogs_repository';
 
 const catalogs = ref([]);
 
