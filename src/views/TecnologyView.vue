@@ -1,6 +1,6 @@
 <script setup>
 import PreviewSlider from '@/components/common/tecnology/PreviewSlider.vue';
-import {ref} from 'vue';
+import { ref } from 'vue';
 
 
 // Modificamos el array para aceptar propiedades opcionales 'title' y 'description'
@@ -84,38 +84,47 @@ const activeTab = ref('fabricacion');
 </script>
 
 <template>
-    <!-- Contenedor con ancho controlado y centrado -->
     <div class="container mx-auto max-w-6xl px-4 mt-16 mb-12">
 
-        <!-- Contenedor de pestañas: diseño moderno tipo pastilla (pill) -->
+        <!-- 1. MENÚ DE PESTAÑAS (Pills): Solo contiene los inputs/botones de control -->
         <div
-            class="tabs tabs-boxed p-1.5 bg-base-200/60 backdrop-blur rounded-2xl grid grid-cols-3 gap-1 md:flex md:justify-center md:gap-2 shadow-inner">
+            class="tabs tabs-boxed p-1.5 bg-base-200/60 backdrop-blur rounded-2xl grid grid-cols-3 gap-1 md:inline-flex md:w-auto md:mx-auto md:flex justify-center shadow-inner">
 
             <!-- PESTAÑA 1: Fabricación -->
             <input type="radio" name="my_tabs_6" value="fabricacion" v-model="activeTab"
-                class="tab tab-lg !rounded-xl font-semibold transition-all duration-300 text-xs sm:text-sm md:text-base checked:!bg-error checked:!text-white"
+                class="tab tab-md md:tab-lg !rounded-xl font-semibold transition-all duration-300 text-[11px] sm:text-xs md:text-base checked:!bg-error checked:!text-white whitespace-nowrap"
                 aria-label="Fabricación" />
-            <!-- v-if obliga al slider a cargarse a tamaño completo en su momento -->
-            <div v-if="activeTab === 'fabricacion'"
-                class="tab-content bg-base-100 rounded-2xl border border-base-200 p-4 md:p-6 mt-4 shadow-sm animate-fade-in">
-                <PreviewSlider :slides="fabricationItems" />
-            </div>
 
             <!-- PESTAÑA 2: Programación a Medida -->
             <input type="radio" name="my_tabs_6" value="programacion" v-model="activeTab"
-                class="tab tab-lg !rounded-xl font-semibold transition-all duration-300 text-xs sm:text-sm md:text-base checked:!bg-error checked:!text-white"
+                class="tab tab-md md:tab-lg !rounded-xl font-semibold transition-all duration-300 text-[11px] sm:text-xs md:text-base checked:!bg-error checked:!text-white whitespace-nowrap"
                 aria-label="Programación" />
-            <div v-if="activeTab === 'programacion'"
-                class="tab-content bg-base-100 rounded-2xl border border-base-200 p-4 md:p-6 mt-4 shadow-sm animate-fade-in">
-                <PreviewSlider :slides="programmingItems" />
-            </div>
 
             <!-- PESTAÑA 3: Diseño y Delineado -->
             <input type="radio" name="my_tabs_6" value="diseno" v-model="activeTab"
-                class="tab tab-lg !rounded-xl font-semibold transition-all duration-300 text-xs sm:text-sm md:text-base checked:!bg-error checked:!text-white"
+                class="tab tab-md md:tab-lg !rounded-xl font-semibold transition-all duration-300 text-[11px] sm:text-xs md:text-base checked:!bg-error checked:!text-white whitespace-nowrap"
                 aria-label="Diseño" />
+
+        </div>
+
+        <!-- 2. CONTENEDOR INDEPENDIENTE: El contenido se renderiza abajo ocupando el 100% real del ancho -->
+        <div class="w-full mt-4">
+
+            <!-- Contenido Fabricación -->
+            <div v-if="activeTab === 'fabricacion'"
+                class="bg-base-100 rounded-2xl border border-base-200 p-3 sm:p-4 md:p-6 shadow-sm animate-fade-in">
+                <PreviewSlider :slides="fabricationItems" />
+            </div>
+
+            <!-- Contenido Programación -->
+            <div v-if="activeTab === 'programacion'"
+                class="bg-base-100 rounded-2xl border border-base-200 p-3 sm:p-4 md:p-6 shadow-sm animate-fade-in">
+                <PreviewSlider :slides="programmingItems" />
+            </div>
+
+            <!-- Contenido Diseño -->
             <div v-if="activeTab === 'diseno'"
-                class="tab-content bg-base-100 rounded-2xl border border-base-200 p-4 md:p-6 mt-4 shadow-sm animate-fade-in">
+                class="bg-base-100 rounded-2xl border border-base-200 p-3 sm:p-4 md:p-6 shadow-sm animate-fade-in">
                 <PreviewSlider :slides="designItems" />
             </div>
 
@@ -123,6 +132,7 @@ const activeTab = ref('fabricacion');
 
     </div>
 </template>
+
 
 <style scoped>
 /* Transición de aparición suave para el contenido al cambiar de pestaña */
