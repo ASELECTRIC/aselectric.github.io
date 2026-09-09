@@ -1,5 +1,5 @@
 <script setup>
-import {ref, onMounted, onUnmounted} from 'vue'; 
+import { ref, onMounted, onUnmounted } from 'vue';
 import { defineProps } from 'vue';
 
 const props = defineProps({
@@ -17,37 +17,37 @@ let timer = null
 
 // Navegación
 const goToSlide = (index) => {
-  currentIndex.value = index
-  resetAutoplay()
+    currentIndex.value = index
+    resetAutoplay()
 }
 
 const nextSlide = () => {
-  currentIndex.value = (currentIndex.value + 1) % slides.length
+    currentIndex.value = (currentIndex.value + 1) % slides.length
 }
 
 const prevSlide = () => {
-  currentIndex.value = (currentIndex.value - 1 + slides.length) % slides.length
-  resetAutoplay()
+    currentIndex.value = (currentIndex.value - 1 + slides.length) % slides.length
+    resetAutoplay()
 }
 
 // Reproducción automática opcional
 const startAutoplay = () => {
-  timer = setInterval(() => {
-    nextSlide()
-  }, 5000)
+    timer = setInterval(() => {
+        nextSlide()
+    }, 5000)
 }
 
 const resetAutoplay = () => {
-  clearInterval(timer)
-  startAutoplay()
+    clearInterval(timer)
+    startAutoplay()
 }
 
 onMounted(() => {
-  startAutoplay()
+    startAutoplay()
 })
 
 onUnmounted(() => {
-  clearInterval(timer)
+    clearInterval(timer)
 })
 
 </script>
@@ -58,13 +58,15 @@ onUnmounted(() => {
         <div class="flex transition-transform duration-500 ease-out"
             :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
             <div v-for="slide in slides" :key="slide.id"
-                class="w-full shrink-0 relative aspect-4/3 sm:aspect-video bg-zinc-900">
-                <img :src="slide.src"
-                    class="w-full h-full object-cover" />
+                class="w-full shrink-0 relative aspect-4/3 sm:aspect-video bg-zinc-900 flex items-center justify-center overflow-hidden">
+
+                <!-- CAMBIO CLAVE: object-contain para mostrar la imagen completa -->
+                <!-- Cambiar object-contain por object-cover -->
+                <img :src="slide.src" :alt="'Slide ' + slide.id" class="w-full h-full object-cover" />
 
                 <!-- Degradado inferior para proteger contraste de los dots -->
                 <div
-                    class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-zinc-950/80 to-transparent pointer-events-none">
+                    class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-zinc-950/80 to-transparent pointer-events-none z-10">
                 </div>
             </div>
         </div>
