@@ -1,4 +1,4 @@
-const JSON_SRC = '../data/catalogs.json';
+const JSON_SRC = '/data/catalogs.json';
 
 export async function loadCatalogs() {
     try {
