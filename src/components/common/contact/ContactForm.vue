@@ -56,6 +56,17 @@ function handleContactForm() {
     touched.value.subject = true;
     touched.value.message = true;
 
+    const destinyEmail = "iker@aselectric.es";
+    const subject = encodeURIComponent(`${form.value.subject}`);
+
+    const body = encodeURIComponent(
+        `Nombre de remitente: ${form.value.name}\n` +
+        `Email de respuesta: ${form.value.email}\n\n` +
+        `Mensaje: ${form.value.message}`
+    );
+
+    window.location.href = `mailto:${destinyEmail}?subject=${subject}&body=${body}`;
+
     if (!isFormValid.value) return;
     alert(`¡Mensaje enviado con éxito!\nGracias ${form.value.name}, nos pondremos en contacto contigo pronto.`);
 

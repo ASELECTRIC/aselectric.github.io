@@ -20,12 +20,30 @@ const fabricationItems = [
         id: 2,
         src: '/src/assets/images/tecnology/fabricacion/fabrication3.jpg'
     },
-    { id: 3, src: '/src/assets/images/tecnology/fabricacion/fabrication4.jpg' },
-    { id: 4, src: '/src/assets/images/tecnology/fabricacion/fabrication6.jpg' },
-    { id: 5, src: '/src/assets/images/tecnology/fabricacion/fabrication7.jpg' },
-    { id: 8, src: '/src/assets/images/tecnology/fabricacion/fabrication8.jpg' },
-    { id: 9, src: '/src/assets/images/tecnology/fabricacion/fabrication9.jpg' },
-    { id: 10, src: '/src/assets/images/tecnology/fabricacion/Fabrication10.jpg' }
+    { 
+        id: 3, 
+        src: '/src/assets/images/tecnology/fabricacion/fabrication4.jpg' 
+    },
+    { 
+        id: 4, 
+        src: '/src/assets/images/tecnology/fabricacion/fabrication6.jpg' 
+    },
+    { 
+        id: 5, 
+        src: '/src/assets/images/tecnology/fabricacion/fabrication7.jpg' 
+    },
+    { 
+        id: 8, 
+        src: '/src/assets/images/tecnology/fabricacion/fabrication8.jpg' 
+    },
+    { 
+        id: 9, 
+        src: '/src/assets/images/tecnology/fabricacion/fabrication9.jpg' 
+    },
+    { 
+        id: 10, 
+        src: '/src/assets/images/tecnology/fabricacion/Fabrication10.jpg' 
+    }
 ];
 
 const programmingItems = [
@@ -78,11 +96,9 @@ const designItems = [
     }
 ]
 
-
 // Variable de estado para controlar la pestaña activa de forma explícita
 const activeTab = ref('fabricacion');
 </script>
-
 <template>
     <div class="container mx-auto max-w-6xl px-4 mt-16 mb-12">
 
@@ -104,7 +120,6 @@ const activeTab = ref('fabricacion');
             <input type="radio" name="my_tabs_6" value="diseno" v-model="activeTab"
                 class="tab tab-md md:tab-lg !rounded-xl font-semibold transition-all duration-300 text-[11px] sm:text-xs md:text-base checked:!bg-error checked:!text-white whitespace-nowrap"
                 aria-label="Diseño" />
-
         </div>
 
         <!-- 2. CONTENEDOR INDEPENDIENTE: El contenido se renderiza abajo ocupando el 100% real del ancho -->
@@ -127,12 +142,9 @@ const activeTab = ref('fabricacion');
                 class="bg-base-100 rounded-2xl border border-base-200 p-3 sm:p-4 md:p-6 shadow-sm animate-fade-in">
                 <PreviewSlider :slides="designItems" />
             </div>
-
         </div>
-
     </div>
 </template>
-
 
 <style scoped>
 /* Transición de aparición suave para el contenido al cambiar de pestaña */
