@@ -17,5 +17,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-  base: 'https://aselectric.github.io/'
+  base: 'aselectric.github.io'
 })
