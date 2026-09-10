@@ -90,7 +90,7 @@ function handleContactForm() {
 <template>
     <form @submit.prevent="handleContactForm" id="contact-form"
         class="w-full max-w-lg bg-base-200 p-10 rounded shadow-lg">
-        <img src="/src/assets/images/logo1.png" />
+        <img src="/images/logo1.png" />
         <div class="flex flex-wrap -mx-3 mt-10 mb-6">
             <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label for="name-input" class="block tracking-wide text-gray-700 text-xs font-bold mb-2">

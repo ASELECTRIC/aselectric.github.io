@@ -3,10 +3,10 @@ import SliderHome from '@/components/common/home/HomeSlider.vue';
 import Carrousel from '@/components/ui/carrousel/Carrousel.vue';
 
 const solutionImages = [
-  { id: 1, src: '/src/assets/images/home/solutions/solution1.jpeg' },
-  { id: 2, src: '/src/assets/images/home/solutions/solution2.jpeg' },
-  { id: 3, src: '/src/assets/images/home/solutions/solution3.jpeg' },
-  { id: 4, src: '/src/assets/images/home/solutions/solution4.jpeg' }
+  { id: 1, src: '/images/home/solutions/solution1.jpeg' },
+  { id: 2, src: '/images/home/solutions/solution2.jpeg' },
+  { id: 3, src: '/images/home/solutions/solution3.jpeg' },
+  { id: 4, src: '/images/home/solutions/solution4.jpeg' }
 ];
 </script>
 <template>

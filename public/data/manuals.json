@@ -4,8 +4,8 @@
         "title": "Manual Instrucciones CD1DG200-300 IMPRENTA",
         "description": null,
         "category": "Equipos Digitales",
-        "download_link": "/public/pdf/equipos_digitales/MANUAL INSTRUCCIONES CD1DG200-300 IMPRENTA.pdf",
-        "front_page": "/src/assets/images/manuals/equipos_digitales/CD1DG200-300.png",
+        "download_link": "/pdf/equipos_digitales/MANUAL INSTRUCCIONES CD1DG200-300 IMPRENTA.pdf",
+        "front_page": "/images/manuals/equipos_digitales/CD1DG200-300.png",
         "filename": "MANUAL INSTRUCCIONES CD1DG200-300 IMPRENTA.pdf",
         "size": "1.21 MG"
     },
@@ -14,8 +14,8 @@
         "title": "Manual Instrucciones CD2DG200-300",
         "description": null,
         "category": "Equipos Digitales",
-        "download_link": "/public/pdf/equipos_digitales/MANUAL INSTRUCCIONES CD2DG200-300.pdf",
-        "front_page": "/src/assets/images/manuals/equipos_digitales/CD2DG200-300.png",
+        "download_link": "/pdf/equipos_digitales/MANUAL INSTRUCCIONES CD2DG200-300.pdf",
+        "front_page": "/images/manuals/equipos_digitales/CD2DG200-300.png",
         "filename": "MANUAL INSTRUCCIONES CD2DG200-300.pdf",
         "size": "4.07 MG"
     },
@@ -24,8 +24,8 @@
         "title": "Manual SOFT3DN",
         "description": null,
         "category": "Equipos Progresivos",
-        "download_link": "/public/pdf/equipos_progresivos/MANUAL SOFT3DN.pdf",
-        "front_page": "/src/assets/images/manuals/equipos_progresivos/SOFT3DN.png",
+        "download_link": "/pdf/equipos_progresivos/MANUAL SOFT3DN.pdf",
+        "front_page": "/images/manuals/equipos_progresivos/SOFT3DN.png",
         "filename": "MANUAL SOFT3DN.pdf",
         "size": "1.19 MG"
     },
@@ -34,8 +34,8 @@
         "title": "Aplicacion para Bombeo Solar con PID MS300 V3",
         "description": null,
         "category": "Equipos Solares",
-        "download_link": "/public/pdf/equipos_solares/APLICACIÓN PARA BOMBEO SOLAR CON PID MS300 V3 AS ELECTRIC DELTA.pdf",
-        "front_page": "/src/assets/images/manuals/equipos_solares/delta-ms300-pv3.png",
+        "download_link": "/pdf/equipos_solares/APLICACIÓN PARA BOMBEO SOLAR CON PID MS300 V3 AS ELECTRIC DELTA.pdf",
+        "front_page": "/images/manuals/equipos_solares/delta-ms300-pv3.png",
         "filename": "APLICACIÓN PARA BOMBEO SOLAR CON PID MS300 V3 AS ELECTRIC DELTA.pdf",
         "size": "2.55 MG"
     },
@@ -44,8 +44,8 @@
         "title": "Manual PID multibomba ms 300",
         "description": null,
         "category": "Equipos Variadores de Frecuencia",
-        "download_link": "/public/pdf/variadores_frecuencia/Manual  PID multibomba ms 300 dos bombas.pdf",
-        "front_page": "/src/assets/images/manuals/variadores_frecuencia/manual-pid-multibomba-ms-300.png",
+        "download_link": "/pdf/variadores_frecuencia/Manual  PID multibomba ms 300 dos bombas.pdf",
+        "front_page": "/images/manuals/variadores_frecuencia/manual-pid-multibomba-ms-300.png",
         "filename": "Manual  PID multibomba ms 300 dos bombas.pdf",
         "size": "927.89 KB"
     },
@@ -54,8 +54,8 @@
         "title": "Delta-CP2000: Manual de Usuarios",
         "description": null,
         "category": "Equipos Variadores de Frecuencia",
-        "download_link": "/public/pdf/variadores_frecuencia/Delta-CP2000-User-Manual.pdf",
-        "front_page": "/src/assets/images/manuals/variadores_frecuencia/delta-cp2000.png",
+        "download_link": "/pdf/variadores_frecuencia/Delta-CP2000-User-Manual.pdf",
+        "front_page": "/images/manuals/variadores_frecuencia/delta-cp2000.png",
         "filename": "Delta-CP2000-User-Manual.pdf",
         "size": "25.77 MG"
     },
@@ -64,8 +64,8 @@
         "title": "Delta Standard Compact Drive MS300 Series User Manual",
         "description": null,
         "category": "Equipos Variadores de Frecuencia",
-        "download_link": "/public/pdf/variadores_frecuencia/DELTA_IA-MDS_VFD MS300_high_UM_EN_20170306_1.pdf",
-        "front_page": "/src/assets/images/manuals/variadores_frecuencia/delta-standart-compact-drive-ms300-manual.png",
+        "download_link": "/pdf/variadores_frecuencia/DELTA_IA-MDS_VFD MS300_high_UM_EN_20170306_1.pdf",
+        "front_page": "/images/manuals/variadores_frecuencia/delta-standart-compact-drive-ms300-manual.png",
         "filename": "DELTA_IA-MDS_VFD MS300_high_UM_EN_20170306_1.pdf",
         "size": "16.61 MB"
     },
@@ -74,8 +74,8 @@
         "title": "Manual Reloj Analógico",
         "description": null,
         "category": "Material",
-        "download_link": "/public/pdf/material/Manual Reloj Analogico.PDF",
-        "front_page": "/src/assets/images/manuals/material/reloj-analogico.png",
+        "download_link": "/pdf/material/Manual Reloj Analogico.PDF",
+        "front_page": "/images/manuals/material/reloj-analogico.png",
         "filename": "Manual Reloj Analogico.pdf",
         "size": "1.69 MG"
     }

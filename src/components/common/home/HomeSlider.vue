@@ -3,9 +3,9 @@ import { ref, onMounted, onUnmounted } from 'vue'
 
 // Configuración
 const slides = [
-  { id: 1, src: '/src/assets/images/home/slider/image1.jpeg', alt: 'Imagen 1' },
-  { id: 2, src: '/src/assets/images/home/slider/image2.jpeg', alt: 'Imagen 2' },
-  { id: 3, src: '/src/assets/images/home/slider/image3.jpeg', alt: 'Imagen 3' }
+  { id: 1, src: '/images/home/slider/image1.jpeg', alt: 'Imagen 1' },
+  { id: 2, src: '/images/home/slider/image2.jpeg', alt: 'Imagen 2' },
+  { id: 3, src: '/images/home/slider/image3.jpeg', alt: 'Imagen 3' }
 ]
 
 const currentSlide = ref(0)
@@ -59,7 +59,7 @@ onUnmounted(() => {
     <div
       class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-2 md:gap-4 w-[70%] md:w-full px-4 text-center z-20 pointer-events-none">
       <!-- Logo -->
-      <img src="/src/assets/images/logo1.png" alt="As Electric"
+      <img src="/images/logo1.png" alt="As Electric"
         class="h-16 sm:h-24 md:h-36 lg:h-44 w-auto object-contain" />
 
       <!-- Texto optimizado -->

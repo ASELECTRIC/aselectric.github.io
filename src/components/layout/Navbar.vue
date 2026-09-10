@@ -4,7 +4,7 @@
         <!-- Sección del Logo -->
         <div class="flex-1">
             <router-link to="/">
-                <img src="/src/assets/images/logo1.png" alt="Logo" width="100" height="40">
+                <img src="/images/logo1.png" alt="Logo" width="100" height="40">
             </router-link>
         </div>
         <div class="flex-4"></div>
