@@ -2,7 +2,6 @@
 import { ref, onMounted, computed, watch } from 'vue';
 import ManualCard from '@/components/ui/card/ManualCard.vue';
 import { getAllManuals, getFilteredManuals } from '@/js/repository/manuals_repository';
-import SearchSVG from '@/components/ui/svg/SearchSVG.vue';
 
 const manuals = ref([]);
 const currentPage = ref(1);
@@ -10,10 +9,7 @@ const itemsPerPage = 6;
 
 const searchInput = ref('');
 const selectedCategory = ref('Categoría');
-
 const isLoading = ref(true);
-
-
 
 onMounted(async () => {
     try {
@@ -81,7 +77,6 @@ function prevPage() {
             </div>
         </div>
         <div class="container mx-auto relative">
-
             <!-- CONTENEDOR PRINCIPAL: Mantiene tu configuración de Grid y dimensiones -->
             <div class="w-full h-full min-h-[1000px] px-4 py-8 relative">
 

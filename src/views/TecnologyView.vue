@@ -20,29 +20,29 @@ const fabricationItems = [
         id: 2,
         src: '/src/assets/images/tecnology/fabricacion/fabrication3.jpg'
     },
-    { 
-        id: 3, 
-        src: '/src/assets/images/tecnology/fabricacion/fabrication4.jpg' 
+    {
+        id: 3,
+        src: '/src/assets/images/tecnology/fabricacion/fabrication4.jpg'
     },
-    { 
-        id: 4, 
-        src: '/src/assets/images/tecnology/fabricacion/fabrication6.jpg' 
+    {
+        id: 4,
+        src: '/src/assets/images/tecnology/fabricacion/fabrication6.jpg'
     },
-    { 
-        id: 5, 
-        src: '/src/assets/images/tecnology/fabricacion/fabrication7.jpg' 
+    {
+        id: 5,
+        src: '/src/assets/images/tecnology/fabricacion/fabrication7.jpg'
     },
-    { 
-        id: 8, 
-        src: '/src/assets/images/tecnology/fabricacion/fabrication8.jpg' 
+    {
+        id: 8,
+        src: '/src/assets/images/tecnology/fabricacion/fabrication8.jpg'
     },
-    { 
-        id: 9, 
-        src: '/src/assets/images/tecnology/fabricacion/fabrication9.jpg' 
+    {
+        id: 9,
+        src: '/src/assets/images/tecnology/fabricacion/fabrication9.jpg'
     },
-    { 
-        id: 10, 
-        src: '/src/assets/images/tecnology/fabricacion/Fabrication10.jpg' 
+    {
+        id: 10,
+        src: '/src/assets/images/tecnology/fabricacion/Fabrication10.jpg'
     }
 ];
 
@@ -88,12 +88,17 @@ const programmingItems = [
 const designItems = [
     {
         id: 0,
-        src: '/src/assets/images/tecnology/design/design1.jpg'
+        src: '/src/assets/images/tecnology/design/design1.jpeg'
     },
     {
         id: 1,
-        src: '/src/assets/images/tecnology/design/design2.jpg'
+        src: '/src/assets/images/tecnology/design/design2.jpeg'
+    },
+    {
+        id: 3,
+        src: '/src/assets/images/tecnology/design/design3.png'
     }
+
 ]
 
 // Variable de estado para controlar la pestaña activa de forma explícita
@@ -134,13 +139,71 @@ const activeTab = ref('fabricacion');
             <!-- Contenido Programación -->
             <div v-if="activeTab === 'programacion'"
                 class="bg-base-100 rounded-2xl border border-base-200 p-3 sm:p-4 md:p-6 shadow-sm animate-fade-in">
-                <PreviewSlider :slides="programmingItems" />
+                <!-- name of each tab group should be unique -->
+                <div class="tabs tabs-box">
+                    <input type="radio" name="my_tabs_3" class="tab" aria-label="Digisolar" checked="checked" />
+                    <div class="tab-content bg-base-100 border-base-300 p-6">
+                        <img src="/src/assets/images/tecnology/programacion/programming1.png" />
+                    </div>
+
+                    <input type="radio" name="my_tabs_3" class="tab" aria-label="Solar Hibrid DG" />
+                    <div class="tab-content bg-base-100 border-base-300 p-6">
+                        <img src="/src/assets/images/tecnology/programacion/programming2.png" />
+                    </div>
+
+                    <input type="radio" name="my_tabs_3" class="tab" aria-label="Calendario Reloj de la Bomba" />
+                    <div class="tab-content bg-base-100 border-base-300 p-6">
+                        <img src="/src/assets/images/tecnology/programacion/programming3.png" />
+                    </div>
+
+                    <input type="radio" name="my_tabs_3" class="tab" aria-label="Ajustes de Parámetros" />
+                    <div class="tab-content bg-base-100 border-base-300 p-6">
+                        <img src="/src/assets/images/tecnology/programacion/programming4.png" />
+                    </div>
+
+                    <input type="radio" name="my_tabs_3" class="tab" aria-label="Control por Nivel de Depósito" />
+                    <div class="tab-content bg-base-100 border-base-300 p-6">
+                        <img src="/src/assets/images/tecnology/programacion/programming5.png" />
+                    </div>
+
+                    <input type="radio" name="my_tabs_3" class="tab" aria-label="Opciones de Grupo de Electrogeno" />
+                    <div class="tab-content bg-base-100 border-base-300 p-6">
+                        <img src="/src/assets/images/tecnology/programacion/programming6.png "/>
+                        <br>
+                        <img src="/src/assets/images/tecnology/programacion/programming7.png" />
+                    </div>
+                    <input type="radio" name="my_tabs_3" class="tab" aria-label="Ajustes Parametros" />
+                    <div class="tab-content bg-base-100 border-base-300 p-6">
+                        <img src="/src/assets/images/tecnology/programacion/programming8.png" />
+                    </div>
+
+                    <input type="radio" name="my_tabs_3" class="tab" aria-label="Calendario Reloj" />
+                    <div class="tab-content bg-base-100 border-base-300 p-6">
+                        <img src="/src/assets/images/tecnology/programacion/programming9.png" />
+                    </div>
+                </div>
             </div>
 
             <!-- Contenido Diseño -->
             <div v-if="activeTab === 'diseno'"
                 class="bg-base-100 rounded-2xl border border-base-200 p-3 sm:p-4 md:p-6 shadow-sm animate-fade-in">
-                <PreviewSlider :slides="designItems" />
+                <!-- name of each tab group should be unique -->
+                <div class="tabs tabs-box">
+                    <input type="radio" name="my_tabs_3" class="tab" aria-label="Hibrido" checked="checked" />
+                    <div class="tab-content bg-base-100 border-base-300 p-6">
+                        <img src="/src/assets/images/tecnology/design/design1.jpeg" />
+                    </div>
+
+                    <input type="radio" name="my_tabs_3" class="tab" aria-label="VFDHV100-1" />
+                    <div class="tab-content bg-base-100 border-base-300 p-6">
+                        <img src="/src/assets/images/tecnology/design/design2.jpeg" />
+                    </div>
+
+                    <input type="radio" name="my_tabs_3" class="tab" aria-label="Cuadro 27 Sectores" />
+                    <div class="tab-content bg-base-100 border-base-300 p-6">
+                        <img src="/src/assets/images/tecnology/design/design3.png" />
+                    </div>
+                </div>
             </div>
         </div>
     </div>
