@@ -11,8 +11,17 @@ const itemsPerPage = 6;
 const searchInput = ref('');
 const selectedCategory = ref('Categoría');
 
+const isLoading = ref(true);
+
+
+
 onMounted(async () => {
-    manuals.value = await getAllManuals();
+    try {
+        isLoading.value = true
+        manuals.value = await getAllManuals();
+    } finally {
+        isLoading.value = false;
+    }
 });
 
 async function filterManuals() {
@@ -71,30 +80,55 @@ function prevPage() {
                 </div>
             </div>
         </div>
-        <div class="container mx-auto">
-            <div
-                class="w-full h-full min-h-[1000px] px-4 py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center items-start content-start">
+        <div class="container mx-auto relative">
 
-                <!-- CASO A: Hay manuales -> Renderizamos las tarjetas de forma normal -->
-                <ManualCard v-if="paginatedManuals.length > 0" v-for="manual in paginatedManuals" :key="manual.id"
-                    :manual="manual" />
+            <!-- CONTENEDOR PRINCIPAL: Mantiene tu configuración de Grid y dimensiones -->
+            <div class="w-full h-full min-h-[1000px] px-4 py-8 relative">
 
-                <!-- CASO B: No hay manuales -> El aviso se posiciona de forma absoluta en el centro del Grid -->
-                <div v-else
-                    class="absolute inset-0 flex items-center justify-center text-center p-12 text-base-content/60">
-                    <div class="max-w-md">
-                        <!-- Opcional: puedes poner un icono aquí -->
-                        <p class="text-lg font-medium">No se encontraron manuales</p>
-                        <p class="text-sm opacity-70 mt-1">Intenta cambiando los filtros o la palabra clave de búsqueda.
-                        </p>
+                <!-- RECURSO 1: ANIMACIÓN DE CARGA (Se muestra si isLoading es verdadero) -->
+                <div v-if="isLoading"
+                    class="absolute inset-0 flex flex-col items-center justify-center text-center gap-4 animate-fade-in">
+                    <span class="loading loading-spinner loading-lg text-error"></span>
+                    <p class="text-sm font-medium text-base-content/60 animate-pulse">
+                        Cargando manuales técnicos...
+                    </p>
+                </div>
+
+                <!-- RENDERIZADO CUANDO TERMINA DE CARGAR (v-else) -->
+                <div v-else class="w-full h-full">
+
+                    <!-- CASO A: Hay manuales -> Renderizamos las tarjetas en tu Grid -->
+                    <div v-if="paginatedManuals.length > 0"
+                        class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center items-start content-start animate-fade-in">
+                        <ManualCard v-for="manual in paginatedManuals" :key="manual.id" :manual="manual" />
                     </div>
+
+                    <!-- CASO B: No hay manuales -> El aviso se posiciona en el centro -->
+                    <div v-else
+                        class="absolute inset-0 flex items-center justify-center text-center p-12 text-base-content/60 animate-fade-in">
+                        <div
+                            class="max-w-md bg-base-200/30 border border-base-200 backdrop-blur-sm p-8 rounded-2xl shadow-sm">
+                            <div class="text-base-content/40 mb-3 flex justify-center">
+                                <svg xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor" class="w-12 h-12">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.604 10.604Z" />
+                                </svg>
+                            </div>
+                            <p class="text-lg font-semibold text-base-content/80">No se encontraron manuales</p>
+                            <p class="text-sm opacity-70 mt-1">
+                                Intenta cambiando los filtros o la palabra clave de búsqueda.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
 
-            <div v-if="totalPages > 1" class="flex justify-center mt-6 mb-10 px-4">
+            <!-- PAGINACIÓN: Solo se muestra si NO está cargando y si hay más de 1 página -->
+            <div v-if="!isLoading && totalPages > 1" class="flex justify-center mt-6 mb-10 px-4 animate-fade-in">
                 <div class="join shadow-sm border border-base-200">
-
                     <!-- Botón Anterior -->
                     <button @click="prevPage" :disabled="currentPage === 1"
                         class="join-item btn btn-sm md:btn-md btn-ghost">
@@ -111,9 +145,9 @@ function prevPage() {
                         class="join-item btn btn-sm md:btn-md btn-ghost">
                         »
                     </button>
-
                 </div>
             </div>
+
         </div>
     </section>
 </template>
