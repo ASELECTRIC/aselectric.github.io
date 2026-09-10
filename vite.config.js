@@ -12,6 +12,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
+  base: 'https://aselectric.github.io/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
