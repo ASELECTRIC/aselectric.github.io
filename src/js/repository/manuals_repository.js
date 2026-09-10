@@ -7,9 +7,7 @@ const JSON_SRC = '/data/manuals.json';
 async function loadManuals() {
     try {
         let response = await fetch(JSON_SRC);
-        let manuals = await response.json();
-        
-        console.log(manuals);
+        let manuals = await response.json();        
         return manuals;
     } catch (error) {
         return []
