@@ -25,7 +25,7 @@
                     <li><RouterLink to="/catalogs">Catálogos</RouterLink></li>
                     <li><RouterLink to="/tech-info">Información Técnica</RouterLink></li>
                     <li><RouterLink to="/contact">Contacto</RouterLink></li>
-                    <li><a>Ubicación</a></li>
+                    <!--<li><a>Ubicación</a></li>-->
                 </ul>
             </div>
 

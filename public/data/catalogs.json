@@ -43,5 +43,104 @@
         "front_page": "/images/manuals/catalogs/aparamenta-schneider-2024.png",
         "filename": "CATÁLOGO APARAMENTA SCHNEIDER.pdf",
         "size": "8.51 MB"
+    },
+    {
+        "id": 6,
+        "title": "Bombeo Digital Marzo 2025-32",
+        "description": null,
+        "download_link": "/pdf/catalogs/CATÁLOGO BOMBEO DIGITAL MARZO 2025-32 PÁGINAS.pdf",
+        "front_page": "/images/manuals/catalogs/catalogo-bombeo-digital-marzo-2025-32.png",
+        "filename": "CATÁLOGO BOMBEO DIGITAL MARZO 2025-32 PÁGINAS.pdf",
+        "size": "6.9 MB"
+    },
+    {
+        "id": 7,
+        "title": "Catálogo Cuadros de Obra 60.439-4",
+        "description": null,
+        "download_link": "/pdf/catalogs/cuadros_obra/CATALOGO CUADROS DE OBRA 60.439-4.pdf",
+        "front_page": "/images/manuals/catalogs/cuadros_obra/cuadros_obra.png",
+        "filename": "CATALOGO CUADROS DE OBRA 60.439-4.pdf",
+        "size": "841.6 KB"
+    },
+    {
+        "id": 8,
+        "title": "Cuadro Obra-2",
+        "description": null,
+        "download_link": "/pdf/catalogs/cuadros_obra/CUADROS OBRA-2.pdf",
+        "front_page": "/images/manuals/catalogs/cuadros_obra/cuadros_obra2.png",
+        "filename": "CUADROS OBRA-2.pdf",
+        "size": "927.4 KB"
+    },
+    {
+        "id": 9,
+        "title": "Ficha Principal 63",
+        "description": null,
+        "download_link": "/pdf/catalogs/cuadros_obra/FICHA PRICIPAL-63.pdf",
+        "front_page": "/images/manuals/catalogs/cuadros_obra/ficha_principal-63.png",
+        "filename": "FICHA PRINCIPAL-63.pdf",
+        "size": "35.2 MG"
+    },
+    {
+        "id": 10,
+        "title": "Ficha Principal 100",
+        "description": null,
+        "download_link": "/pdf/catalogs/cuadros_obra/FICHA PRINCIPAL-100.pdf",
+        "front_page": "/images/manuals/catalogs/cuadros_obra/ficha_principal-100.png",
+        "filename": "FICHA PRINCIPAL-100.pdf",
+        "size": "35.3 MB"
+    },
+    {
+        "id": 11,
+        "title": "Ficha Secundaia 2M+1T",
+        "description": null,
+        "download_link": "/pdf/catalogs/cuadros_obra/FICHA SECUNDARIO 2M+1T.pdf",
+        "front_page": "/images/manuals/catalogs/cuadros_obra/ficha_secundaria-2m+1t.png",
+        "filename": "FICHA SECUNDARIO 2M+1T.pdf",
+        "size": "17.5 MB"
+    },
+    {
+        "id": 12,
+        "title": "Ficha Secundario 3M",
+        "description": null,
+        "download_link": "/pdf/catalogs/cuadros_obra/FICHA SECUNDARIO 3M.pdf",
+        "front_page": "/images/manuals/catalogs/cuadros_obra/ficha_secundaria-3m.png",
+        "filename": "FICHA SECUNDARIO 3M.pdf",
+        "size": "25.0 MB"
+    },
+    {
+        "id": 13,
+        "title": "Catalogo Progresivo AS ELECTRIC 17 Septiembre",
+        "description": null,
+        "download_link": "/pdf/catalogs/progresivos/CATALOGO PROGRESIVOS AS ELECTRIC 17 SEPTIEMBRE.pdf",
+        "front_page": "/images/manuals/catalogs/progresivos/catalogo_progresivos_as_electric_17_septiembre.png",
+        "filename": "CATALOGO PROGRESIVOS AS ELECTRIC 17 SEPTIEMBRE.pdf",
+        "size": "43.7 MB"
+    },
+    {
+        "id": 14,
+        "title": "Catalogo Progesivos AS ELECTRIC 2024 Red",
+        "description": null,
+        "download_link": "/pdf/catalogs/progresivos/CATALOGO PROGRESIVOS AS ELECTRIC 2024.red.pdf",
+        "front_page": "/images/manuals/catalogs/progresivos/catalogo_progresivos_as_electric_2024.png",
+        "filename": "CATALOGO PROGRESIVOS AS ELECTRIC 2024.red.pdf",
+        "size": "12.8 MB"
+    },
+    {
+        "id": 15,
+        "title": "Catalogo SOFT3DN",
+        "description": null,
+        "download_link": "/pdf/catalogs/progresivos/CATALOGO SOFT3DN.pdf",
+        "front_page": "/images/catalogs/progresivos/catalogo_soft3dn.png",
+        "filename": "CATALOGO SOFT3DN.pdf",
+        "size": "1.5 MB"
+    },
+    {
+        "id": 16,
+        "title": "Soft Catalogo China",
+        "description": null,
+        "download_link": "/pdf/catalogs/progresivos/SOFT CATALOGO CHINA.pdf",
+        "front_page": "/images/catalogs/progresivos/soft_catalog_china.png",
+        "filename": "SOFT CATALOGO CHINA.pdf",
+        "size": "15.3 MB"
     }
 ]

@@ -50,7 +50,7 @@ const fabricationItems = [
 const activeTab = ref('fabricacion');
 </script>
 <template>
-    <div class="container mx-auto max-w-6xl px-4 mt-16 mb-12">
+    <div class="container mx-auto overflow-x-auto max-w-6xl px-4 mt-16 mb-12">
 
         <!-- 1. MENÚ DE PESTAÑAS (Pills): Solo contiene los inputs/botones de control -->
         <div
